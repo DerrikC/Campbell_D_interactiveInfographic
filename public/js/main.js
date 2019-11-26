@@ -24,4 +24,17 @@ Button2 = document.querySelectorAll('.goodBlood');
 //execute
 Button1.forEach(button => button.addEventListener('click', imageButton1));
 Button2.forEach(button => button.addEventListener('click', imageButton2));
+
+//variable 
+var infoFact = document.querySelector('.fact1 p');
+
+//function
+//rendering tbl sidefacts data
+ 
+
+
+//execution
+//rendering tbl sidefacts data
+
+
  })();
