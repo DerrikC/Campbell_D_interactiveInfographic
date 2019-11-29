@@ -17,12 +17,10 @@
    <main>
 
       <div class="fact1">
-      
-{#each data}
-   <p>{discoverer}</p>
-{/each}
-        
-      </p>
+         
+         {{#each data}}
+          <p>{{discoverer}}</p>
+         {{/each}} 
       </div>
 
       <section class="topInfo">
@@ -34,7 +32,6 @@
       <div class="bloodCells">
       <div class="badCell"> <img src="images/badBlood.svg" class="badBlood" id="badBlood" alt="badBlood"></div>
       <div class="goodCell"> <img src="images/goodBlood.svg" class="goodBlood" id="goodBlood" alt="goodBlood"></div>
-     
       </div>
       </section>
 
@@ -52,13 +49,19 @@
       <div class="badCellDesc"></div>
 
       <div class="factCont">
-      <p></p>
+ 
       <div class="fact2"> 
+       {{#each data}}
+          <p>{{mosquitoes}}</p>
+       {{/each}} 
       </div>
 
       <div class="geneDesc"></div>
 
       <div class="fact3">
+       {{#each data}}
+          <p>{{genetics}}</p>
+       {{/each}} 
       </div>
       <p></p>
       </div>
@@ -67,6 +70,7 @@
       </div>
 
    </main>
+
    <footer>
       <h1>derrikxavier © 2019 </h1> 
       <h2>Sources:<br>
