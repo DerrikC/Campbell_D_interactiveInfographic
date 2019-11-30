@@ -5,10 +5,23 @@
 * {
     margin: 0;
     padding: 0;
+
+}
+
+body {
+    width: 1080x;
+    height: 600px;
+    margin: 0 auto;
+}
+
+header h1{
+    color: white;
 }
 
 main {
+    width: 1080px;
     height: 600px;
+    margin: 0 auto;
 }
 
 main h1 {
@@ -28,6 +41,12 @@ main h2 {
     width: 350px;
 }
 
+.topInfo {
+    display: flex;
+}
+
+//world background
+
 .sickleBack { 
     width: 500px;
     position: absolute;
@@ -37,9 +56,8 @@ main h2 {
     z-index: -1;
 }
 
-.topInfo {
-    display: flex;
-}
+
+//blood info & transition
 
 .bloodCells {
     display: flex;
@@ -94,14 +112,30 @@ main h2 {
     z-index: 3;
 }
 
+.badVein {
+    position: absolute;
+    width: 700px;
+    padding: 0px 25px 25px 125px;
+    z-index: 2;
+}
+
+.goodVein {
+    position: absolute;
+    width: 700px;
+    padding: 0px 25px 25px 125px;
+    z-index: 1;
+}
+
+// side facts
 .factCont{
  position: absolute;
  float: left;
 }
 
 .fact1 {
+    display: flex;
     float: right;
-    position: absolute;
+    // position: absolute;
     right: 0;
     height: 75px;
     width: 200px;
@@ -109,25 +143,43 @@ main h2 {
     background-color: $second-color;
 }
 
-.badVein {
-    position: absolute;
-    width: 800px;
-    padding: 25px 25px 25px 95px;
-    z-index: 2;
+.fact1 p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    
 }
 
-.goodVein {
-    position: absolute;
-    width: 800px;
-    padding: 25px 25px 25px 95px;
-    z-index: 1;
+.fact1Img {
+    width: 35px;
+    padding: 5px;
 }
 
 .fact2 {
+    display: flex;
     height: 75px;
     width: 200px;
     background-color: $second-color;
 }
+
+.fact2 p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.fact2Img {
+    width: 35px;
+    padding: 5px;
+}
+
+
 
 .geneDesc {
     width: 250px;
@@ -141,7 +193,67 @@ main h2 {
 
 
 .fact3 {
+    display: flex;
     height: 75px;
     width: 300px;
     background-color: $first-color;
+}
+
+.fact3 p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.fact3Img {
+    width: 35px;
+    padding: 5px;
+}
+
+
+//statistic percentages and data info
+.stat1 {
+    background-color:red;
+    width: 200px;
+    height: 80px;
+    z-index: 4;
+    padding: 10px 10px 10px 50px;
+}
+
+.stat2 {
+    background-color:purple;
+    width: 200px;
+    height: 80px;
+    z-index: 4;
+    padding: 10px;   
+    margin: 10px;
+}
+
+.stat3 {
+    background-color:blue;
+    width: 200px;
+    height: 80px;
+    z-index: 4;
+    padding: 10px;
+    margin: 10px;
+}
+
+.stat4 {
+    background-color:green;
+    width: 200px;
+    height: 80px;
+    z-index: 4;
+    padding: 10px;
+    float: right;
+   
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    float: right; 
 }
