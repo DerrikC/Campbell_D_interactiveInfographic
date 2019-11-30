@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 76.36 76.25" style="enable-background:new 0 0 76.36 76.25;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#282422;stroke-miterlimit:10;}
+	.st1{fill:#282422;}
+	.st2{fill:#060505;}
+	.st3{fill:#ECAAAA;}
+</style>
+<g id="mosquito_1_">
+	<line class="st0" x1="20.56" y1="20.27" x2="10.46" y2="10.23"/>
+	<polygon class="st1" points="20.91,21.71 17.56,18.75 19.03,17.29 21.94,20.69 	"/>
+	<g>
+		<path class="st1" d="M48.41,44.59l-11.16-11.1c-0.94-0.93-2.47-0.93-3.4,0l0,0c-0.94,0.93-0.94,2.45,0,3.38l11.16,11.1
+			c0.94,0.93,2.47,0.93,3.4,0l0,0C49.35,47.04,49.35,45.52,48.41,44.59z"/>
+	</g>
+	
+		<ellipse transform="matrix(0.7097 -0.7045 0.7045 0.7097 -9.0964 21.6911)" class="st1" cx="21.77" cy="21.88" rx="3.32" ry="1.32"/>
+	<ellipse class="st2" cx="23.7" cy="20.28" rx="1.17" ry="1.17"/>
+	<ellipse class="st2" cx="20.37" cy="23.59" rx="1.17" ry="1.17"/>
+	<polygon class="st1" points="21.27,22.38 25.08,26.63 26.96,24.77 22.59,21.07 	"/>
+	<polyline class="st0" points="24.15,28.31 16.05,29.43 8.9,25.3 1.53,26.89 0.35,25.72 	"/>
+	<polyline class="st0" points="28.62,24.02 29.76,15.97 25.6,8.85 27.2,1.52 26.02,0.35 	"/>
+	<polyline class="st0" points="30.48,34.91 34.57,48.44 47.38,64.26 50.07,76.14 	"/>
+	<polyline class="st0" points="34.8,30.19 48.4,34.25 64.3,47 76.25,49.68 	"/>
+	<polyline class="st0" points="28.44,33.34 28.58,44.07 35.73,54.62 35.09,64.26 	"/>
+	
+		<ellipse transform="matrix(0.9956 -0.0933 0.0933 0.9956 -4.2396 2.9411)" class="st3" cx="29.33" cy="46.81" rx="5.36" ry="19.69"/>
+	<polyline class="st0" points="33.37,28.17 44.16,28.31 54.76,35.43 64.46,34.78 	"/>
+	
+		<ellipse transform="matrix(0.0922 -0.9957 0.9957 0.0922 14.2508 73.3697)" class="st3" cx="47.36" cy="28.87" rx="5.33" ry="19.79"/>
+	<g>
+		<path class="st1" d="M36.48,30.9l-6.14-6.11c-1.44-1.43-3.79-1.43-5.23,0l0,0c-1.44,1.43-1.44,3.77,0,5.2l6.14,6.11
+			c1.44,1.43,3.79,1.43,5.23,0l0,0C37.92,34.68,37.92,32.34,36.48,30.9z"/>
+	</g>
+</g>
+</svg>
