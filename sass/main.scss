@@ -19,9 +19,10 @@ header h1{
 }
 
 main {
-    width: 1080px;
+    width: 100%;
     height: 600px;
     margin: 0 auto;
+  
 }
 
 main h1 {
@@ -43,17 +44,23 @@ main h2 {
 
 .topInfo {
     display: flex;
+    height: 150px;
 }
 
 //world background
 
+
+
 .sickleBack { 
-    width: 500px;
+    display: flex;
+    width: 50%;
+    max-height: 500px;
     position: absolute;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 550px;
+    margin-left: 500px;
     z-index: -1;
+    // margin: 0 auto;
 }
 
 
@@ -113,15 +120,19 @@ main h2 {
 }
 
 .badVein {
+    display: flex;
     position: absolute;
-    width: 700px;
+    width: 70%;
+    max-height: 500px;
     padding: 0px 25px 25px 125px;
     z-index: 2;
 }
 
 .goodVein {
+    display: flex;
     position: absolute;
-    width: 700px;
+    width: 70%;
+    max-height: 500px;
     padding: 0px 25px 25px 125px;
     z-index: 1;
 }
@@ -135,8 +146,8 @@ main h2 {
 .fact1 {
     display: flex;
     float: right;
-    // position: absolute;
-    right: 0;
+    position: absolute;
+    right: 0px;
     height: 75px;
     width: 200px;
     margin-top: 25px;
@@ -160,14 +171,14 @@ main h2 {
 
 .fact2 {
     display: flex;
-    height: 75px;
+    height: 70.55px;
     width: 200px;
     background-color: $second-color;
 }
 
 .fact2 p {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 8px;
+    font-size: 10px;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
@@ -194,7 +205,7 @@ main h2 {
 
 .fact3 {
     display: flex;
-    height: 75px;
+    height: 94.95px;
     width: 300px;
     background-color: $first-color;
 }
@@ -216,15 +227,20 @@ main h2 {
 
 //statistic percentages and data info
 .stat1 {
-    background-color:red;
+    color: black;
+    background-color: grey;
     width: 200px;
     height: 80px;
     z-index: 4;
     padding: 10px 10px 10px 50px;
 }
 
+.stat1 p {
+ background-color: red;
+}
+
 .stat2 {
-    background-color:purple;
+    background-color:grey;
     width: 200px;
     height: 80px;
     z-index: 4;
@@ -233,7 +249,7 @@ main h2 {
 }
 
 .stat3 {
-    background-color:blue;
+    background-color:grey;
     width: 200px;
     height: 80px;
     z-index: 4;
@@ -242,7 +258,7 @@ main h2 {
 }
 
 .stat4 {
-    background-color:green;
+    background-color:grey;
     width: 200px;
     height: 80px;
     z-index: 4;
@@ -257,3 +273,167 @@ main h2 {
     width: 300px;
     float: right; 
 }
+
+
+
+// lightbox stuuff
+
+.lightbox { 
+    display: none;
+    //display: flex;
+    position: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgba(0, 0,0, 0.85);
+}
+
+    h4 {
+        color: #2A7A41;
+        font-size: 18px;
+        padding: 5px;
+    }
+    .sidebar {
+        flex: 1;
+    }
+    
+    .lb-content {
+        flex: 3;
+    }
+
+    lb-content p {
+        width: 400px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+
+
+    .close {    
+        font-family: Arial, Helvetica, sans-serif;;
+        right: 24px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 2em;
+        position: fixed;
+        padding: 2px 14px 5px;
+        color: white;
+        z-index: 999;
+   
+    }
+
+
+    .user-panel h1 {
+        font-family: Helvetica, Arial, sans-serif;
+        padding: 15px;
+        color: #2A7A41;
+    }
+
+    .user-panel {
+        flex: 0 1 200px;
+        text-align: center;
+        padding: 8px;
+    }
+
+
+        .u-link { 
+            display: absolute; 
+            font-family: Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            margin: 20px;
+            background-color: #ED5353;
+            padding: 10px;
+            border-radius: 25px;
+            color: white;
+        }
+
+
+        // test
+
+
+
+          #slide{
+            position: fixed;
+            background: #DAE9F7;
+            width: 200px; 
+            right: -200px;
+            height: 103.6px;
+            transition: right 0.4s ease-in-out;
+            -o-transition: right 0.4s ease-in-out;
+            -ms-transition: right 0.4s ease-in-out;
+            -moz-transition: right 0.4s ease-in-out;
+            -webkit-transition: right 0.4s ease-in-out;
+            z-index: 5;
+          }
+          #toggle{
+            position: absolute;
+            right: 200px;
+            padding: 10px;
+            background: #DAE9F7; 
+          }
+    
+          #slide:hover{
+            right: 0px;
+          }
+
+          #slide2{
+            position: absolute;
+            background: #DAE9F7;
+            width: 200px; 
+            left: -200px;
+            height: 80.55px;
+            margin-right: 200px;
+            transition: left 0.4s ease-in-out;
+            -o-transition: left 0.4s ease-in-out;
+            -ms-transition: left 0.4s ease-in-out;
+            -moz-transition: left 0.4s ease-in-out;
+            -webkit-transition: left 0.4s ease-in-out;
+            z-index: 5;
+          }
+
+          #toggle2{
+            position: absolute;
+            left: 200px;
+            padding: 10px;
+            background: #DAE9F7; 
+            z-index: 5;
+          }
+   
+          #slide2:hover{
+            left: 0px;
+          }
+
+
+          #slide3{
+            position: absolute;
+            background: #EDACAD;
+            width: 300px; 
+            left: -300px;
+            height: 104.95px;
+            margin-right: 200px;
+            transition: left 0.4s ease-in-out;
+            -o-transition: left 0.4s ease-in-out;
+            -ms-transition: left 0.4s ease-in-out;
+            -moz-transition: left 0.4s ease-in-out;
+            -webkit-transition: left 0.4s ease-in-out;
+            z-index: 5;
+          }
+
+          #toggle3{
+            position: absolute;
+            left: 300px;
+            padding: 10px;
+            background: #EDACAD; 
+            z-index: 5;
+          }
+   
+          #slide3:hover{
+            left: 0px;
+          }
