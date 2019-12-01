@@ -60,12 +60,46 @@
 
       
    <div class="stats">
-      
-      <div class="stat1"></div>
-      <div class="stat2"></div>
-      <div class="stat3"></div>
-      <div class="stat4"></div>
-   </div>
+   
+      <div class="stat1">        
+         {{#each data}}
+          <h1>{{stat1}}</h1>
+         {{/each}} 
+         {{#each data}}
+          <p>{{statDesc}}</p>
+         {{/each}} 
+      </div>
+
+      <div class="stat2">
+         {{#each data}}
+          <h1>{{stat2}}</h1>
+         {{/each}}
+         {{#each data}}
+          <p>{{stat2Desc}}</p>
+         {{/each}} 
+      </div>
+
+      <div class="stat3">
+         {{#each data}}
+         <h1>{{stat3}}</h1>
+         {{/each}}
+         {{#each data}}
+          <p>{{stat3Desc}}</p>
+         {{/each}} 
+      </div>
+
+      <div class="stat4">
+         {{#each data}}
+         <h1>{{stat4}}</h1>
+         {{/each}}
+         {{#each data}}
+          <p>{{stat4Desc}}</p>
+         {{/each}} 
+      </div>
+
+      </div>
+
+
 
       <div class="goodCellDesc"></div>
       <div class="badCellDesc"></div>
@@ -73,19 +107,13 @@
       
       <div class="factCont">
 
- 
-
-
 
       </div>
       
 
-
-
-
-
-
-      <div class="geneDesc"></div>
+      <div class="geneDesc">
+         <img src="images/geneticDesc.svg" class="geneticDesc" id="geneticDesc" alt="geneticDesc">
+      </div>
 
       
      <div id="slide3">
@@ -99,7 +127,7 @@
       </div></div>
       </div>
 
-   
+
 
 
 
