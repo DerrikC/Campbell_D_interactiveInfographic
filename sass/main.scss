@@ -20,7 +20,7 @@ header h1{
 
 main {
     width: 100%;
-    height: 600px;
+    height: 650px;
     margin: 0 auto;
   
 }
@@ -36,6 +36,10 @@ main h2 {
     font-family: $secondary-f;
     padding: 5px 5px 25px 25px;
    
+}
+
+.logo {
+    padding: 25px;
 }
 
 .question {
@@ -54,7 +58,7 @@ main h2 {
 .sickleBack { 
     display: flex;
     width: 50%;
-    max-height: 500px;
+    max-height: 600px;
     position: absolute;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -115,7 +119,6 @@ main h2 {
     display: absolute;
     width: 150px;
     height: 150px;
-    background-color: lightgrey;
     z-index: 3;
 }
 
@@ -123,8 +126,8 @@ main h2 {
     display: flex;
     position: absolute;
     width: 70%;
-    max-height: 500px;
-    padding: 0px 25px 25px 125px;
+    max-height: 400px;
+    padding: 0px 25px 25px 50px;
     z-index: 2;
 }
 
@@ -132,8 +135,8 @@ main h2 {
     display: flex;
     position: absolute;
     width: 70%;
-    max-height: 500px;
-    padding: 0px 25px 25px 125px;
+    max-height: 400px;
+    padding: 0px 25px 25px 50px;
     z-index: 1;
 }
 
@@ -193,9 +196,11 @@ main h2 {
 
 
 .geneDesc {
+    display: relative;
     width: 250px;
     height: 150px;
-    background-color: lightgrey;
+    padding: 25px;
+    z-index: 7;
 }
 
 .geneDesc:hover {
@@ -228,49 +233,91 @@ main h2 {
 //statistic percentages and data info
 .stat1 {
     color: black;
-    background-color: grey;
     width: 200px;
-    height: 80px;
+    height: 60px;
     z-index: 4;
     padding: 10px 10px 10px 50px;
+    margin-top: -100px;
 }
 
-.stat1 p {
- background-color: red;
+ .stat1 h1 {
+     font-size: 60px;
+    -webkit-text-stroke: 1px white;
+    padding: 0;
+ }
+
+ .stat1 p {
+    font-size: 12px;
+    font-family: $primary-f;
+    padding: 0;
 }
+
 
 .stat2 {
-    background-color:grey;
     width: 200px;
-    height: 80px;
+    height: 60px;
     z-index: 4;
     padding: 10px;   
     margin: 10px;
 }
 
+.stat2 h1 {
+    font-size: 50px;
+   -webkit-text-stroke: 1px white;
+   padding: 0;
+}
+
+.stat2 p {
+    font-size: 12px;
+    font-family: $primary-f;
+}
+
 .stat3 {
-    background-color:grey;
     width: 200px;
-    height: 80px;
+    height: 60px;
     z-index: 4;
     padding: 10px;
     margin: 10px;
 }
 
+.stat3 h1 {
+    font-size: 45px;
+   -webkit-text-stroke: 1px white;
+   padding: 0;
+}
+
+.stat3 p {
+    font-size: 12px;
+    font-family: $primary-f;
+}
+
 .stat4 {
-    background-color:grey;
-    width: 200px;
-    height: 80px;
+    width: 300px;
+    height: 60px;
     z-index: 4;
     padding: 10px;
-    float: right;
-   
+    margin: 50px 0px 0px 0px;
+    left:0;
+}
+
+
+.stat4 p {
+    font-size: 12px;
+    font-family: $primary-f;
+ 
+}
+
+.stat4 h1 {
+    font-size: 50px;
+   -webkit-text-stroke: 1px white;
+   padding: 0;
 }
 
 .stats {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    height: auto;
+    width: 400px;
     float: right; 
 }
 
@@ -372,6 +419,7 @@ main h2 {
             -webkit-transition: right 0.4s ease-in-out;
             z-index: 5;
           }
+
           #toggle{
             position: absolute;
             right: 200px;

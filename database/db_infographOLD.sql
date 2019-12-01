@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 01, 2019 at 03:25 AM
+-- Generation Time: Nov 25, 2019 at 11:09 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -49,25 +49,16 @@ INSERT INTO `tbl_genes` (`ID`, `diagram`, `info1`, `info2`, `info3`) VALUES
 
 CREATE TABLE `tbl_infograph` (
   `ID` int(11) NOT NULL,
-  `title` varchar(40) DEFAULT NULL,
-  `details` text,
-  `image` varchar(100) DEFAULT NULL,
-  `numbers` varchar(100) DEFAULT NULL
+  `badCellDesc` text,
+  `badveinImage` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_infograph`
 --
 
-INSERT INTO `tbl_infograph` (`ID`, `title`, `details`, `image`, `numbers`) VALUES
-(1, 'discoverer', 'The first description of a Sickle-shaped\r\nblood cell was made by Dr. James Herrick\r\nin 1910.\r\n', 'fact1Img.svg', NULL),
-(2, 'mosquitoes', 'It has been hypothesized that the sickle cell\r\ndisease remained because it was evolutionarily\r\nadvantageous against malaria. The unique\r\nsickle cell shaped blood cells make carriers.\r\n', 'fact2Image.svg', NULL),
-(3, 'genetics', 'When both parents are\r\ncarriers of Sickle Cell\r\nDisease a copy of the\r\ngene is passed on.\r\nA = Normal gene\r\nS = Sickle cell gene\r\n', 'fact3Img.svg', NULL),
-(4, 'geneticGraphic', NULL, 'geneticDesc.svg', NULL),
-(5, 'stat1', 'of the world’s\r\npopulation\r\ncarries genes\r\nresponsible\r\nfor sickle cell\r\ndisease.\r\n', NULL, '5%\r\n'),
-(6, 'stat2', 'is the expected\r\nglobal increase of\r\nsickle cell anemia\r\ncases by 2050\r\n', NULL, '30%\r\n'),
-(7, 'stat3', '\r\nbirths per year will be impacted by sickle\r\nanemia given rough world estimates.\r\nMost common among people with ancestry\r\nfrom sub-Saharan Africa, India, Saudi Arabia\r\nand Mediterranean countries.\r\n', NULL, '300,000\r\n'),
-(8, 'stat4', 'of children born with\r\nsickle cell disease\r\nwill die within the\r\nfirst 5 years of life.\r\n', NULL, '90%');
+INSERT INTO `tbl_infograph` (`ID`, `badCellDesc`, `badveinImage`) VALUES
+(1, 'The misshaped red blood cell\r\ncauses obstructions in blood\r\nvessels. The sickle-shaped\r\ncells cluster together which can\r\nblock blood flow.\r\n', 'badVein.svg');
 
 -- --------------------------------------------------------
 
@@ -79,23 +70,16 @@ CREATE TABLE `tbl_sidefacts` (
   `ID` int(11) NOT NULL,
   `discoverer` text,
   `genetics` text,
-  `mosquitoes` text,
-  `stat1` varchar(20) DEFAULT NULL,
-  `statDesc` text,
-  `stat2` varchar(20) DEFAULT NULL,
-  `stat2Desc` text,
-  `stat3` varchar(20) DEFAULT NULL,
-  `stat3Desc` text,
-  `stat4` varchar(20) DEFAULT NULL,
-  `stat4Desc` text
+  `mosquitoes` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_sidefacts`
 --
 
-INSERT INTO `tbl_sidefacts` (`ID`, `discoverer`, `genetics`, `mosquitoes`, `stat1`, `statDesc`, `stat2`, `stat2Desc`, `stat3`, `stat3Desc`, `stat4`, `stat4Desc`) VALUES
-(1, 'The first description of a Sickle-shaped\r\nblood cell was made by Dr. James Herrick\r\nin 1910.\r\n', 'When both parents are\r\ncarriers of Sickle Cell\r\nDisease a copy of the\r\ngene is passed on.\r\nA = Normal gene\r\nS = Sickle cell gene\r\n', 'It has been hypothesized that the sickle cell disease remained because it was evolutionary advantageous against malaria. The unique sickle cell shaped blood cells make carriers.\r\n', '5%', 'of the world’s\r\npopulation\r\ncarries genes\r\nresponsible\r\nfor sickle cell\r\ndisease.\r\n', '30%', 'is the expected\r\nglobal increase of\r\nsickle cell anemia\r\ncases by 2050\r\n', '300,000', 'births per year will be impacted by sickle\r\nanemia given rough world estimates.\r\nMost common among people with ancestry\r\nfrom sub-Saharan Africa, India, Saudi Arabia and Mediterranean countries.\r\n', '90%', 'of children born with\r\nsickle cell disease\r\nwill die within the\r\nfirst 5 years of life.\r\n');
+INSERT INTO `tbl_sidefacts` (`ID`, `discoverer`, `genetics`, `mosquitoes`) VALUES
+(1, 'The first description of a Sickle-shaped\r\nblood cell was made by Dr. James Herrick\r\nin 1910.\r\n', 'When both parents are\r\ncarriers of Sickle Cell\r\nDisease a copy of the\r\ngene is passed on.\r\nA = Normal gene\r\nS = Sickle cell gene\r\n', 'It has been hypothesized that the sickle cell disease remained because it was evolutionary advantageous against malaria. The unique sickle cell shaped blood cells make carriers.\r\n'),
+(2, 'The first description of a Sickle-shaped\r\nblood cell was made by Dr. James Herrick\r\nin 1910.\r\n', 'When both parents are\r\ncarriers of Sickle Cell\r\nDisease a copy of the\r\ngene is passed on.\r\n\r\nA = Normal gene\r\nS = Sickle cell gene\r\n', 'It has been hypothesized that the sickle cell disease remained because it was evolutionarily advantageous against malaria. The unique\r\nsickle cell shaped blood cells make carriers.\r\n');
 
 -- --------------------------------------------------------
 
@@ -162,7 +146,7 @@ ALTER TABLE `tbl_genes`
 -- AUTO_INCREMENT for table `tbl_infograph`
 --
 ALTER TABLE `tbl_infograph`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_sidefacts`
