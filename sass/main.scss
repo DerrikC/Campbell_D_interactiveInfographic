@@ -3,6 +3,8 @@
 @import 'modules/_footer';
 @import 'modules/_lightbox';
 @import 'modules/_users';
+@import 'modules/_mobile';
+@import 'modules/_tablet';
 
 * {
     margin: 0;
@@ -12,28 +14,9 @@
 
 
 
-
-
-// @media (max-width:500px) and (min-width: 501px){
-
-
-
-// }
-
-// @media (max-width:768px) and (min-width: 501px){
-
-
-
-// }
-
-
-
-
-
-
-
+@media (min-width: 769px){
 body {
-    width: 1080x;
+    // width: 1080px;
     height: 600px;
     margin: 0 auto;
 }
@@ -153,6 +136,12 @@ main h2 {
     font-size: 10px;
     font-family: Helvetica, Arial, sans-serif;
 }
+
+.badCellDesc h1 {
+    font-size: 14px;
+    padding: 0px;
+}
+
 // .goodCellDesc {
 //     display: absolute;
 //     width: 150px;
@@ -167,7 +156,7 @@ main h2 {
     width: 70%;
     max-height: 600px;
     margin-top: -80px;
-    padding: 0px 25px 25px 65px;
+    padding: 0px 25px 25px 85px;
     z-index: 2;
 }
 
@@ -177,7 +166,7 @@ main h2 {
     width: 70%;
     max-height: 600px;
     margin-top: -80px;
-    padding: 0px 25px 25px 65px;
+    padding: 0px 25px 25px 85px;
     z-index: 1;
 }
 
@@ -569,3 +558,4 @@ main h2 {
                 padding: 25px 125px 25px 125px;
                 z-index: 20; 
           }
+        }

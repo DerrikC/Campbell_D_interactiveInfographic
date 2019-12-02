@@ -12,7 +12,7 @@
             padding: 20px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 14px;
-            background-color: rgba(0, 0,0, 0.85);
+            background-color: rgba(158, 202, 215, 0.85);
         }
         
             .sidebar {
@@ -27,6 +27,7 @@
                 width: 400px;
                 padding: 10px;
                 margin: 10px;
+                display: flex;
             }
         
             .lightbox img { 
@@ -34,7 +35,7 @@
                 justify-content: center;
                 position: absolute;
                 width: 100%;
-                max-width: 800px;
+                max-width: 600px;
                 padding: 25px;
                 margin: 0 auto;
           
