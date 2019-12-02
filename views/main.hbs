@@ -20,14 +20,15 @@
 
  
      <div id="slide">
-      <div id="toggle"><div class="fact1Img"> <img src="images/fact1Img.svg" class="fact1Img" id="fact1Img" alt="fact1Img"></div></div>
+      <div id="toggle"><img src="images/tabRight.svg" class="tabRight" id="tabRight" alt="tabRight"><div class="fact1Img"> <img src="images/fact1Img.svg" class="fact1Img" id="fact1Img" alt="fact1Img"></div></div>
       <div class="box">      
       
       <div class="fact1">       
          {{#each data}}
           <p>{{discoverer}}</p>
          {{/each}} 
-      </div></div>
+      </div>
+      </div>
       </div>
 
 
@@ -49,16 +50,6 @@
    <img src="images/goodVein.svg" class="goodVein" id="goodVein" alt="goodVein" >
 
 
-     <div id="slide2">
-      <div id="toggle2"><div class="fact2Img"> <img src="images/fact2Img.svg" class="fact2Img" id="fact2Img" alt="fact2Img"></div></div>
-      <div class="box2">      
-      
-      <div class="fact2">       
-         {{#each data}}
-          <p>{{mosquitoes}}</p>
-         {{/each}} 
-      </div></div>
-      </div>
 
       
    <div class="stats">
@@ -102,24 +93,71 @@
       </div>
 
 
+      </div>
+      <div class="badCellDesc">
+      <p>Abnormal Blood Cell</p>
 
-      <div class="goodCellDesc"></div>
-      <div class="badCellDesc"></div>
+
+      <p>
+      The misshaped red blood cell
+      causes obstructions in blood
+      vessels. The sickle-shaped
+      cells cluster together which can
+      block blood flow.
+      </p>
+      <br>
+      <p>Normal Blood Cells</p>
+      <p>
+      Healthy red blood
+      cells carry oxygen
+      throughout the body.
+      </p>
+      </div>
+
+      <div id="slide2">
+      <div id="toggle2"><img src="images/tabRight.svg" class="tabRight" id="tabRight" alt="tabRight"> <img src="images/fact2Img.svg" class="fact2Img" id="fact2Img" alt="fact2Img"></div>
+      <div class="box2">      
       
+      <div class="fact2">       
+         {{#each data}}
+          <p>{{mosquitoes}}</p>
+         {{/each}} 
+      </div></div>
+      </div>
+
+
       
       <div class="factCont">
 
+         
+      </div>
+
 
       </div>
       
 
-      <div class="geneDesc">
-         <img src="images/geneticDesc.svg" class="geneticDesc" id="geneticDesc" alt="geneticDesc">
-      </div>
 
+{{!-- diagram lightbox button --}}
+    <div class="diagramCont">
+        {{#each data}}
+        
+        <div class="user-panel">
+        <img class="u-foodImage" src="images/{{ image }}" alt="geneDiagram"> <!--avatar key taken out of data-->
+
+        <a class="u-link" href="{{ ID }}">
+            EXPAND
+        </a>
+        </div>
+
+        {{/each}} 
+    </div>
+{{!-- diagram lightbox button end --}}
+
+
+    </div>
       
      <div id="slide3">
-      <div id="toggle3"><div class="fact3Img"> <img src="images/fact3Img.svg" class="fact3Img" id="fact3Img" alt="fact3Img"></div></div>
+      <div id="toggle3"> <img src="images/fact3Img.svg" class="fact3Img" id="fact3Img" alt="fact3Img"><img src="images/tabLeft.svg" class="tabLeft" id="tabLeft" alt="tabLeft"></div>
       <div class="box3">      
       
       <div class="fact3">       
@@ -132,32 +170,6 @@
 
 
 
-
-
-
-  
-  
-    <div class="recipe">
-        <!-- loop through all my foods and put their info on the page -->
-        {{!-- the food handlebars are hididng the button --}}
-        {{#each data}}
-        
-        <div class="user-panel">
-         <h1>{{ info1 }}</h1>
-        <img class="u-foodImage" src="images/{{ diagram }}" alt="geneDiagram"> <!--avatar key taken out of data-->
-
-        <a class="u-link" href="{{ ID }}">
-            EXPAND
-        </a>
-        </div>
-
-        {{/each}}
-        
-    </div>
-
-    </div>
-
-
     <!-- this will be filled in on the client side when we render our AJAX data -->
     <section class="lightbox">
 
@@ -165,7 +177,7 @@
         <span class="close">x</span>
 
         <div class="sidebar">
-            <img src="" alt="larger bio image">
+            <img src="" alt="diagram image">
          </div>
         
         <div class="lb-content">

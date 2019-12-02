@@ -44,7 +44,7 @@ header h1{
 
 main {
     width: 100%;
-    height: 725px;
+    height: 700px;
     margin: 0 auto;
   
 }
@@ -148,7 +148,10 @@ main h2 {
     width: 150px;
     height: 150px;
     z-index: 3;
-    background-color: grey;
+    margin-top: -50px;
+    padding: 25px;
+    font-size: 10px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 // .goodCellDesc {
 //     display: absolute;
@@ -164,7 +167,7 @@ main h2 {
     width: 70%;
     max-height: 600px;
     margin-top: -80px;
-    padding: 0px 25px 25px 50px;
+    padding: 0px 25px 25px 65px;
     z-index: 2;
 }
 
@@ -174,7 +177,7 @@ main h2 {
     width: 70%;
     max-height: 600px;
     margin-top: -80px;
-    padding: 0px 25px 25px 50px;
+    padding: 0px 25px 25px 65px;
     z-index: 1;
 }
 
@@ -213,7 +216,7 @@ main h2 {
 
 .fact2 {
     display: flex;
-    height: 70.55px;
+    height: 90px;
     width: 200px;
     background-color: $second-color;
     padding: 5px;
@@ -250,7 +253,7 @@ main h2 {
 
 .fact3 {
     display: flex;
-    height: 94.95px;
+    height: 120px;
     width: 300px;
     background-color: $first-color;
 }
@@ -478,6 +481,8 @@ main h2 {
             right: 200px;
             padding: 10px;
             background: #DAE9F7; 
+            width: 100px;
+            display: flex;
           }
     
           #slide:hover{
@@ -485,46 +490,51 @@ main h2 {
           }
 
           #slide2{
-            position: absolute;
+            position: fixed;
             background: #DAE9F7;
             width: 200px; 
-            left: -200px;
+            right: -200px;
             height: 80.55px;
-            margin-right: 200px;
-            transition: left 0.4s ease-in-out;
-            -o-transition: left 0.4s ease-in-out;
-            -ms-transition: left 0.4s ease-in-out;
-            -moz-transition: left 0.4s ease-in-out;
-            -webkit-transition: left 0.4s ease-in-out;
-            z-index: 5;
+            margin-left: 200px;
+            margin-top: 10px;
+            transition: right 0.4s ease-in-out;
+            -o-transition: right 0.4s ease-in-out;
+            -ms-transition: right 0.4s ease-in-out;
+            -moz-transition: right 0.4s ease-in-out;
+            -webkit-transition: right 0.4s ease-in-out;
+            z-index: 11;
           }
 
           #toggle2{
             position: absolute;
-            left: 200px;
+            right: 200px;
             padding: 10px;
             background: #DAE9F7; 
+            height: 80.55px;
             z-index: 5;
+            width: 75px;
+            display: flex;
           }
    
           #slide2:hover{
-            left: 0px;
+            right: 0px;
           }
 
 
           #slide3{
-            position: absolute;
+            position: fixed;
             background: #EDACAD;
             width: 300px; 
             left: -300px;
             height: 104.95px;
             margin-right: 200px;
+            margin-top: -275px;
             transition: left 0.4s ease-in-out;
             -o-transition: left 0.4s ease-in-out;
             -ms-transition: left 0.4s ease-in-out;
             -moz-transition: left 0.4s ease-in-out;
             -webkit-transition: left 0.4s ease-in-out;
-            z-index: 5;
+            z-index: 11;
           }
 
           #toggle3{
@@ -533,6 +543,9 @@ main h2 {
             padding: 10px;
             background: #EDACAD; 
             z-index: 5;
+            width: 75px;
+            height: 100px;
+            display: flex;
           }
    
           #slide3:hover{
@@ -540,3 +553,19 @@ main h2 {
           }
 
 
+          .tabLeft {
+            width: 25px;
+          }
+
+          .tabRight {
+            width: 25px;
+          }
+
+          .diagramCont {
+                display: absolute;
+                width: 250px;
+                height: 150px;
+                margin-top: 50px;
+                padding: 25px 125px 25px 125px;
+                z-index: 20; 
+          }
