@@ -1,156 +1,4 @@
-@media (max-width:500px)  {
-    .lightbox { 
-        display: none;
-        //display: flex;
-        position: flex;
-        flex-direction: row;
-        min-height: 100vh;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 5000;
-        padding: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        background-color: rgba(0, 0,0, 0.85);
-    
-        h4 {
-            color: #2A7A41;
-            font-size: 18px;
-            padding: 5px;
-        }
-        .sidebar {
-            flex: 1;
-        }
-        
-        .lb-content {
-            flex: 3;
-        }
-
-        lb-content p {
-            width: 400px;
-            padding: 10px;
-            margin: 10px;
-        }
-    
-
-        img { 
-            display: flex;
-            width: 100%;
-            max-width: 50px;
-            padding: 25px;
-      
-        }
-    
-       p {
-            display: flex;
-            width: 300px;
-            padding: 10px;
-            margin: 10px;
-        }
-    
-        .close {    
-            font-family: Arial, Helvetica, sans-serif;;
-            right: 24px;
-            top: 10px;
-            cursor: pointer;
-            font-size: 2em;
-            position: fixed;
-            padding: 2px 14px 5px;
-            color: white;
-            z-index: 999;
-       
-        }
-    }
-    
-    .show-lb { display: flex !important; }
-    
-    .u-social {
-        li { 
-            display: inline-block;
-            padding: 25px;
-        }
-    }
-
-}
-
-@media (max-width:768px) and (min-width: 501px)  {
-    .lightbox { 
-        display: none;
-        //display: flex;
-        position: flex;
-        flex-direction: row;
-        min-height: 100vh;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 5000;
-        padding: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        background-color: rgba(0, 0,0, 0.85);
-    
-        h4 {
-            color: #2A7A41;
-            font-size: 18px;
-            padding: 5px;
-        }
-        .sidebar {
-            flex: 1;
-        }
-        
-        .lb-content {
-            flex: 3;
-        }
-
-        lb-content p {
-            width: 400px;
-            padding: 10px;
-            margin: 10px;
-        }
-    
-
-        img { 
-            display: flex;
-            width: 100%;
-            max-width: 100px;
-            padding: 25px;
-      
-        }
-    
-       p {
-            display: flex;
-            width: 300px;
-            padding: 10px;
-            margin: 10px;
-        }
-    
-        .close {    
-            font-family: Arial, Helvetica, sans-serif;;
-            right: 24px;
-            top: 10px;
-            cursor: pointer;
-            font-size: 2em;
-            position: fixed;
-            padding: 2px 14px 5px;
-            color: white;
-            z-index: 999;
-       
-        }
-    }
-    
-    .show-lb { display: flex !important; }
-    
-    .u-social {
-        li { 
-            display: inline-block;
-            padding: 25px;
-        }
-    }
-    
-    }
-
-    @media (min-width:769px)  {
+  
         .lightbox { 
             display: none;
             //display: flex;
@@ -165,12 +13,8 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 14px;
             background-color: rgba(0, 0,0, 0.85);
+        }
         
-            h4 {
-                color: #2A7A41;
-                font-size: 18px;
-                padding: 5px;
-            }
             .sidebar {
                 flex: 1;
             }
@@ -185,22 +29,17 @@
                 margin: 10px;
             }
         
-            img { 
+            .lightbox img { 
                 display: flex;
                 justify-content: center;
                 position: absolute;
                 width: 100%;
-                max-width: 150px;
+                max-width: 800px;
                 padding: 25px;
+                margin: 0 auto;
           
             }
         
-            p {
-                padding: 5px;
-                width: 400px;
-                padding: 10px;
-                margin: 10px;
-            }
         
             .close {    
                 font-family: Arial, Helvetica, sans-serif;;
@@ -214,7 +53,7 @@
                 z-index: 999;
            
             }
-        }
+        
         
         .show-lb { display: flex !important; }
         
@@ -225,4 +64,4 @@
             }
         }
         
-        }
+        

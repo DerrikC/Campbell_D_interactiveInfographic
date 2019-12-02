@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 01, 2019 at 03:25 AM
+-- Generation Time: Dec 02, 2019 at 02:50 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -87,15 +87,16 @@ CREATE TABLE `tbl_sidefacts` (
   `stat3` varchar(20) DEFAULT NULL,
   `stat3Desc` text,
   `stat4` varchar(20) DEFAULT NULL,
-  `stat4Desc` text
+  `stat4Desc` text,
+  `image` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_sidefacts`
 --
 
-INSERT INTO `tbl_sidefacts` (`ID`, `discoverer`, `genetics`, `mosquitoes`, `stat1`, `statDesc`, `stat2`, `stat2Desc`, `stat3`, `stat3Desc`, `stat4`, `stat4Desc`) VALUES
-(1, 'The first description of a Sickle-shaped\r\nblood cell was made by Dr. James Herrick\r\nin 1910.\r\n', 'When both parents are\r\ncarriers of Sickle Cell\r\nDisease a copy of the\r\ngene is passed on.\r\nA = Normal gene\r\nS = Sickle cell gene\r\n', 'It has been hypothesized that the sickle cell disease remained because it was evolutionary advantageous against malaria. The unique sickle cell shaped blood cells make carriers.\r\n', '5%', 'of the world’s\r\npopulation\r\ncarries genes\r\nresponsible\r\nfor sickle cell\r\ndisease.\r\n', '30%', 'is the expected\r\nglobal increase of\r\nsickle cell anemia\r\ncases by 2050\r\n', '300,000', 'births per year will be impacted by sickle\r\nanemia given rough world estimates.\r\nMost common among people with ancestry\r\nfrom sub-Saharan Africa, India, Saudi Arabia and Mediterranean countries.\r\n', '90%', 'of children born with\r\nsickle cell disease\r\nwill die within the\r\nfirst 5 years of life.\r\n');
+INSERT INTO `tbl_sidefacts` (`ID`, `discoverer`, `genetics`, `mosquitoes`, `stat1`, `statDesc`, `stat2`, `stat2Desc`, `stat3`, `stat3Desc`, `stat4`, `stat4Desc`, `image`) VALUES
+(1, 'The first description of a Sickle-shaped\r\nblood cell was made by Dr. James Herrick\r\nin 1910.\r\n', 'When both parents are\r\ncarriers of Sickle Cell\r\nDisease a copy of the\r\ngene is passed on.\r\nA = Normal gene\r\nS = Sickle cell gene\r\n', 'It has been hypothesized that the sickle cell disease remained because it was evolutionary advantageous against malaria. The unique sickle cell shaped blood cells make carriers more resistant to malaria parasites that would attack a normal blood cell.\r\n', '5%', 'of the world’s\r\npopulation\r\ncarries genes\r\nresponsible\r\nfor sickle cell\r\ndisease.\r\n', '30%', 'is the expected\r\nglobal increase of\r\nsickle cell anemia\r\ncases by 2050\r\n', '300,000', 'births per year will be impacted by sickle\r\nanemia given rough world estimates.\r\nMost common among people with ancestry\r\nfrom sub-Saharan Africa, India, Saudi Arabia and Mediterranean countries.\r\n', '90%', 'of children born with\r\nsickle cell disease\r\nwill die within the\r\nfirst 5 years of life.\r\n', 'geneDiagram.jpeg');
 
 -- --------------------------------------------------------
 
