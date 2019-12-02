@@ -14,7 +14,7 @@ This will be a dynamic infograph that retrieves data that will be displayed on t
  
 ### Dependencies
 
-Used CSS3, SASS, HTML3, Javascript and some PHP. 
+Used CSS3, SASS, HTML3, and Javascript. 
 Also used Handlebars.
 
 ### Installing
@@ -47,6 +47,8 @@ Contributors names and contact info
 This project is licensed under the derrikxavier License - see the LICENSE.md file for details - (MIT is usually fine)
 
 ## Acknowledgments
+References for CSS Transitions:
+https://codepen.io/wifeo/pen/qzwkb
 
 Inspiration: 
 Family 

@@ -21,6 +21,36 @@
         {{{ body }}}
 
 
+
+
+
+
+{{!-- lightbox --}}
+ {{!-- might need to be directed to main.js --}}
+    <script type="module" src="js/lightbox.js"></script>  
+    <script>
+        var name = "Sickle Cell Infograph";
+
+        console.log('name in main file: ' + name);
+    </script>
+    <!-- templates -> these don't get rendered immediately -->
+    <template id="user-template">
+        <!-- you can put all kinds of markup here - semantic tagging, etc -->
+        <div class="user-panel">
+            <div class="user-panel-header">
+                <img class="u-foodImage"></img>
+                <h1 class="u-name"></h1>
+            </div>
+
+            <button class="user-button">More Details</button>
+        </div>
+    </template>
+
+    <!-- end templates-->
+
+
+
+
 </body>
 
 </html>

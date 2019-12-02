@@ -1,0 +1,56 @@
+
+#to-top img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    float: right;
+}
+
+.recipe{ 
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .user-panel h1 {
+        font-family: Helvetica, Arial, sans-serif;
+        padding: 15px;
+        color: #2A7A41;
+    }
+
+    .user-panel {
+        flex: 0 1 200px;
+        text-align: center;
+        padding: 8px;
+
+        .u-foodImage { max-width: 200px; 
+            -webkit-clip-path: inset(0px round 5px 5px 5px 5px);
+            clip-path: inset(0px round 5px 5px 5px 5px);
+        
+        }
+
+        .u-link { 
+            display: block; 
+            font-family: Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            margin: 20px;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 25px;
+            color: white;
+        }
+
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .recipe {
+        .user-panel { 
+            flex: 1 1;
+
+            .u-foodImage { max-width: 300px; }
+        }
+    }
+}
+

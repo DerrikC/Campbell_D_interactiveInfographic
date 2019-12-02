@@ -1,12 +1,36 @@
 @import '_vars';
 @import 'modules/_header';
 @import 'modules/_footer';
+@import 'modules/_lightbox';
+@import 'modules/_users';
 
 * {
     margin: 0;
     padding: 0;
 
 }
+
+
+
+
+
+// @media (max-width:500px) and (min-width: 501px){
+
+
+
+// }
+
+// @media (max-width:768px) and (min-width: 501px){
+
+
+
+// }
+
+
+
+
+
+
 
 body {
     width: 1080x;
@@ -20,7 +44,7 @@ header h1{
 
 main {
     width: 100%;
-    height: 650px;
+    height: 725px;
     margin: 0 auto;
   
 }
@@ -56,15 +80,19 @@ main h2 {
 
 
 .sickleBack { 
-    display: flex;
-    width: 50%;
-    max-height: 600px;
+    // width: 600px;
+    width: 60%;
+    max-height: 550px;
+    max-width: 550px;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 100px;
-    margin-left: 500px;
-    z-index: -1;
+    right: 0;
+    padding: 35px 105px 105px 25px;
+    // margin-left: 550px;
     // margin: 0 auto;
+    z-index: -1;
+    display: flex;
 }
 
 
@@ -120,13 +148,22 @@ main h2 {
     width: 150px;
     height: 150px;
     z-index: 3;
+    background-color: grey;
 }
+// .goodCellDesc {
+//     display: absolute;
+//     width: 150px;
+//     height: 150px;
+//     z-index: 3;
+//     background-color: grey;
+// }
 
 .badVein {
     display: flex;
     position: absolute;
     width: 70%;
-    max-height: 400px;
+    max-height: 600px;
+    margin-top: -80px;
     padding: 0px 25px 25px 50px;
     z-index: 2;
 }
@@ -135,7 +172,8 @@ main h2 {
     display: flex;
     position: absolute;
     width: 70%;
-    max-height: 400px;
+    max-height: 600px;
+    margin-top: -80px;
     padding: 0px 25px 25px 50px;
     z-index: 1;
 }
@@ -153,8 +191,10 @@ main h2 {
     right: 0px;
     height: 75px;
     width: 200px;
-    margin-top: 25px;
+    margin-top: 5px;
+    padding: 5px;
     background-color: $second-color;
+    z-index: 10;
 }
 
 .fact1 p {
@@ -163,8 +203,7 @@ main h2 {
     background-color: white;
     padding: 5px;
     border-radius: 10px;
-    margin: 5px;
-    
+    margin: 5px;  
 }
 
 .fact1Img {
@@ -177,6 +216,7 @@ main h2 {
     height: 70.55px;
     width: 200px;
     background-color: $second-color;
+    padding: 5px;
 }
 
 .fact2 p {
@@ -221,7 +261,7 @@ main h2 {
     background-color: white;
     padding: 5px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 15px;
 }
 
 .fact3Img {
@@ -235,20 +275,46 @@ main h2 {
     color: black;
     width: 200px;
     height: 60px;
-    z-index: 4;
+    z-index: 8;
     padding: 10px 10px 10px 50px;
     margin-top: -100px;
+    margin-left: 35px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
 }
 
+.stat1:hover {
+    z-index: 8;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.25);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.25);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.25);
+    transition: all 200ms ease-in;
+    transform: scale(1.25);
+}
+
+
  .stat1 h1 {
-     font-size: 60px;
+     font-size: 45px;
     -webkit-text-stroke: 1px white;
+    margin-left:25px;
     padding: 0;
+    
  }
 
  .stat1 p {
     font-size: 12px;
     font-family: $primary-f;
+    margin-left:25px;
     padding: 0;
 }
 
@@ -259,6 +325,28 @@ main h2 {
     z-index: 4;
     padding: 10px;   
     margin: 10px;
+    margin-left: 100px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+
+.stat2:hover {
+    z-index: 8;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.25);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.25);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.25);
+    transition: all 200ms ease-in;
+    transform: scale(1.25);
 }
 
 .stat2 h1 {
@@ -278,10 +366,31 @@ main h2 {
     z-index: 4;
     padding: 10px;
     margin: 10px;
+    margin-left: 75px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+
+.stat3:hover {
+    z-index: 8;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.25);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.25);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.25);
+    transition: all 200ms ease-in;
+    transform: scale(1.25);
 }
 
 .stat3 h1 {
-    font-size: 45px;
+    font-size: 35px;
    -webkit-text-stroke: 1px white;
    padding: 0;
 }
@@ -293,15 +402,36 @@ main h2 {
 
 .stat4 {
     width: 300px;
-    height: 60px;
+    height: 100px;
     z-index: 4;
     padding: 10px;
     margin: 50px 0px 0px 0px;
     left:0;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
 }
 
+.stat4:hover {
+    z-index: 8;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.25);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.25);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.25);
+    transition: all 200ms ease-in;
+    transform: scale(1.25);
+}
 
 .stat4 p {
+    width: 150px;
+    height: 80px;
     font-size: 12px;
     font-family: $primary-f;
  
@@ -318,88 +448,11 @@ main h2 {
     flex-wrap: wrap;
     height: auto;
     width: 400px;
+    margin-top: 50px;
+    margin-left: -100px;
     float: right; 
 }
 
-
-
-// lightbox stuuff
-
-.lightbox { 
-    display: none;
-    //display: flex;
-    position: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 5000;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    background-color: rgba(0, 0,0, 0.85);
-}
-
-    h4 {
-        color: #2A7A41;
-        font-size: 18px;
-        padding: 5px;
-    }
-    .sidebar {
-        flex: 1;
-    }
-    
-    .lb-content {
-        flex: 3;
-    }
-
-    lb-content p {
-        width: 400px;
-        padding: 10px;
-        margin: 10px;
-    }
-
-
-
-
-    .close {    
-        font-family: Arial, Helvetica, sans-serif;;
-        right: 24px;
-        top: 10px;
-        cursor: pointer;
-        font-size: 2em;
-        position: fixed;
-        padding: 2px 14px 5px;
-        color: white;
-        z-index: 999;
-   
-    }
-
-
-    .user-panel h1 {
-        font-family: Helvetica, Arial, sans-serif;
-        padding: 15px;
-        color: #2A7A41;
-    }
-
-    .user-panel {
-        flex: 0 1 200px;
-        text-align: center;
-        padding: 8px;
-    }
-
-
-        .u-link { 
-            display: absolute; 
-            font-family: Helvetica, Arial, sans-serif;
-            text-decoration: none;
-            margin: 20px;
-            background-color: #ED5353;
-            padding: 10px;
-            border-radius: 25px;
-            color: white;
-        }
 
 
         // test
@@ -417,7 +470,7 @@ main h2 {
             -ms-transition: right 0.4s ease-in-out;
             -moz-transition: right 0.4s ease-in-out;
             -webkit-transition: right 0.4s ease-in-out;
-            z-index: 5;
+            z-index: 10;
           }
 
           #toggle{
@@ -485,3 +538,5 @@ main h2 {
           #slide3:hover{
             left: 0px;
           }
+
+
