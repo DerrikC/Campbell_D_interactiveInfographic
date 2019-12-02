@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Interactive Infographic | Sickle Cell Disease</title>
+
+    <link rel="shortcut icon" type="image/png" href="images/faviconSickle.png"/>
 </head>
 <body>
    <img src="images/sickleBack.svg" class="sickleBack" alt="sickleBack">
@@ -122,10 +124,57 @@
       
       <div class="fact3">       
          {{#each data}}
-          <p>{{mosquitoes}}</p>
+          <p>{{genetics}}</p>
          {{/each}} 
       </div></div>
       </div>
+
+
+
+
+
+
+
+  
+  
+    <div class="recipe">
+        <!-- loop through all my foods and put their info on the page -->
+        {{!-- the food handlebars are hididng the button --}}
+        {{#each data}}
+        
+        <div class="user-panel">
+         <h1>{{ info1 }}</h1>
+        <img class="u-foodImage" src="images/{{ diagram }}" alt="geneDiagram"> <!--avatar key taken out of data-->
+
+        <a class="u-link" href="{{ ID }}">
+            EXPAND
+        </a>
+        </div>
+
+        {{/each}}
+        
+    </div>
+
+    </div>
+
+
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <section class="lightbox">
+
+        
+        <span class="close">x</span>
+
+        <div class="sidebar">
+            <img src="" alt="larger bio image">
+         </div>
+        
+        <div class="lb-content">
+        </div>
+        
+    </section>
+
+    
+</section>
 
 
 
@@ -144,5 +193,6 @@
    </footer>
 
    <script src="js/main.js"></script>
+ 
 </body>
 </html>
