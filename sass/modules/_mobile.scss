@@ -31,7 +31,10 @@
     }
     
     .logo {
-       display: none;
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        margin-top: 25px;
     }
     
     .question {
@@ -57,7 +60,7 @@
         margin-bottom: 100px;
         right: 0;
         padding: 35px 135px 35px 25px;
-        margin-left: 550px;
+        // margin-left: 550px;
         // margin: 0 auto;
         z-index: -1;
         display: flex;
@@ -76,7 +79,7 @@
         width:50px;
         padding: 2px;
         margin: 8px;
-        margin-top: 125px;
+        margin-top: 150px;
       
     }
     
@@ -98,7 +101,7 @@
         width:50px;
         padding: 2px;
         margin: 8px;
-        margin-top: 125px;
+        margin-top: 150px;
 
     }
     
@@ -117,13 +120,12 @@
     
     .badCellDesc {
         display: absolute;
-        float: left;
         width: 150px;
         height: 150px;
-        z-index: 1;
-        margin-top: -695px;
+        z-index: 3;
+        margin-top: -50px;
         padding: 25px;
-        font-size: 9px;
+        font-size: 10px;
         font-family: Helvetica, Arial, sans-serif;
     }
     
@@ -389,7 +391,7 @@
         height: 100px;
         z-index: 4;
         padding: 10px;
-        margin: 50px 0px 0px 50px;
+        margin: 50px 0px 0px 0px;
         left:0;
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1); 
@@ -433,7 +435,7 @@
         height: auto;
         width: 400px;
         margin-top: 300px;
-        // margin-left: -100px;
+        margin-left: -100px;
         float: right; 
     }
     
@@ -477,7 +479,7 @@
                 right: -200px;
                 height: 80.55px;
                 margin-left: 200px;
-                margin-top: 200px;
+                margin-top: 10px;
                 transition: right 0.4s ease-in-out;
                 -o-transition: right 0.4s ease-in-out;
                 -ms-transition: right 0.4s ease-in-out;
@@ -509,7 +511,7 @@
                 left: -300px;
                 height: 104.95px;
                 margin-right: 200px;
-                margin-top: -50px;
+                margin-top: -150px;
                 transition: left 0.4s ease-in-out;
                 -o-transition: left 0.4s ease-in-out;
                 -ms-transition: left 0.4s ease-in-out;
@@ -546,7 +548,8 @@
                     display: absolute;
                     width: 250px;
                     height: 150px;
-                    padding: 0px 100px 0px 100px;
+                    margin-top: 50px;
+                    padding: 25px 125px 25px 125px;
                     z-index: 20; 
               }
 
