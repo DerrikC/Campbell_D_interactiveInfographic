@@ -50,5 +50,8 @@ This project is licensed under the derrikxavier License - see the LICENSE.md fil
 References for CSS Transitions:
 https://codepen.io/wifeo/pen/qzwkb
 
+Support: 
+Trevor Van Rys
+
 Inspiration: 
 Family 
