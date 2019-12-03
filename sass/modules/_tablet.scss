@@ -1,4 +1,4 @@
-@media (max-width:768px) and (min-width: 501px){
+@media (max-width:868px) and (min-width: 501px){
 
     body {
         // width: 1080px;
@@ -75,8 +75,8 @@
     
     .badBlood {
         display: flex;  
-        height:100px;
-        width:100px;
+        height:50px;
+        width:50px;
         padding: 2px;
         margin: 8px;
         margin-left: -50px;
@@ -87,19 +87,19 @@
     .badBlood:hover {
         display: flex;
         border:1px solid #EC5357;    
-        height:100px;
+        height:50px;
         border-radius:50%;
         -moz-border-radius:50%;
         -webkit-border-radius:50%;
-        width:100px;
+        width:50px;
         cursor: pointer;
     
     }
     
     .goodBlood {
         display: flex;  
-        height:100px;
-        width:100px;
+        height:50px;
+        width:50px;
         padding: 2px;
         margin: 8px;
         margin-top: 50px;
@@ -109,11 +109,11 @@
     .goodBlood:hover {
         display: flex;
         border:1px solid #EC5357;    
-        height:100px;
+        height:50px;
         border-radius:50%;
         -moz-border-radius:50%;
         -webkit-border-radius:50%;
-        width:100px;
+        width:50px;
         cursor: pointer;
     
     }
@@ -435,7 +435,7 @@
         flex-wrap: wrap;
         height: auto;
         width: 400px;
-        margin-top: 400px;
+        margin-top: 300px;
         margin-left: -100px;
         float: right; 
     }
@@ -512,7 +512,7 @@
                 left: -300px;
                 height: 104.95px;
                 margin-right: 200px;
-                margin-top: -600px;
+                margin-top: -500px;
                 transition: left 0.4s ease-in-out;
                 -o-transition: left 0.4s ease-in-out;
                 -ms-transition: left 0.4s ease-in-out;
