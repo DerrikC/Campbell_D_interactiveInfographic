@@ -1,9 +1,10 @@
   
+       @media (min-width: 769px){  
         .lightbox { 
             display: none;
             //display: flex;
             position: flex;
-            flex-direction: row;
+            // flex-direction: row;
             min-height: 100vh;
             width: 100%;
             position: fixed;
@@ -20,6 +21,8 @@
             }
         
             .lb-content {
+                display: flex;
+                margin: 0 auto;
                 flex: 3;
             }
 
@@ -27,7 +30,7 @@
                 width: 400px;
                 padding: 10px;
                 margin: 10px;
-                display: flex;
+            
             }
         
             .lightbox img { 
@@ -35,9 +38,8 @@
                 justify-content: center;
                 position: absolute;
                 width: 100%;
-                max-width: 600px;
-                padding: 25px;
-                margin: 0 auto;
+                max-width: 700px;
+                padding: 50px;
           
             }
         
@@ -58,11 +60,142 @@
         
         .show-lb { display: flex !important; }
         
-        .u-social {
-            li { 
-                display: inline-block;
-                padding: 25px;
-            }
         }
-        
-        
+
+
+
+
+        @media (max-width:768px) and (min-width: 501px){
+
+            .lightbox { 
+                display: none;
+                //display: flex;
+                position: flex;
+                // flex-direction: row;
+                min-height: 100vh;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                z-index: 5000;
+                padding: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                background-color: rgba(158, 202, 215, 0.85);
+            }
+            
+                .sidebar {
+                    flex: 1;
+                }
+            
+                .lb-content {
+                    display: flex;
+                    margin: 0 auto;
+                    flex: 3;
+                }
+    
+                lb-content p {
+                    width: 400px;
+                    padding: 10px;
+                    margin: 10px;
+                
+                }
+            
+                .lightbox img { 
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    width: 100%;
+                    max-width: 500px;
+                    padding: 50px;
+              
+                }
+            
+            
+                .close {    
+                    font-family: Arial, Helvetica, sans-serif;;
+                    right: 24px;
+                    top: 10px;
+                    cursor: pointer;
+                    font-size: 2em;
+                    position: fixed;
+                    padding: 2px 14px 5px;
+                    color: white;
+                    z-index: 999;
+               
+                }
+            
+            
+            .show-lb { display: flex !important; }
+
+
+
+        }
+
+        @media (max-width:500px) {
+
+            .lightbox { 
+                display: none;
+                //display: flex;
+                position: flex;
+                // flex-direction: row;
+                min-height: 100vh;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                z-index: 5000;
+                padding: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                background-color: rgba(158, 202, 215, 0.85);
+            }
+            
+                .sidebar {
+                    flex: 1;
+                }
+            
+                .lb-content {
+                    display: flex;
+                    margin: 0 auto;
+                    flex: 3;
+                }
+    
+                lb-content p {
+                    width: 400px;
+                    padding: 10px;
+                    margin: 10px;
+                
+                }
+            
+                .lightbox img { 
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    width: 100%;
+                    max-width: 300px;
+                    margin-top: 100px;
+                    padding: 15px;
+              
+                }
+            
+            
+                .close {    
+                    font-family: Arial, Helvetica, sans-serif;;
+                    right: 24px;
+                    top: 10px;
+                    cursor: pointer;
+                    font-size: 2em;
+                    position: fixed;
+                    padding: 2px 14px 5px;
+                    color: white;
+                    z-index: 999;
+               
+                }
+            
+            
+            .show-lb { display: flex !important; }
+
+
+
+
+
+        }
