@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 14, 2020 at 07:08 AM
+-- Generation Time: Dec 02, 2019 at 02:50 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -169,7 +169,7 @@ ALTER TABLE `tbl_infograph`
 -- AUTO_INCREMENT for table `tbl_sidefacts`
 --
 ALTER TABLE `tbl_sidefacts`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_worldimpact`
