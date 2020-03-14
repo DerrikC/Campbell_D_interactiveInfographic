@@ -2,6 +2,10 @@ const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
 
+
+//fix heroku crashing
+const sql = require('./utils/sql');
+
 // set the port
 const port = process.env.PORT || 3000;
 
