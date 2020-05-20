@@ -194,13 +194,14 @@
     }
     
     .fact1Img {
+        height: 60px;
         width: 35px;
         padding: 5px;
     }
     
     .fact2 {
         display: flex;
-        height: 90px;
+        height: 100px;
         width: 200px;
         background-color: $second-color;
         padding: 5px;
@@ -216,6 +217,7 @@
     }
     
     .fact2Img {
+        height: 80px;
         width: 35px;
         padding: 5px;
     }
@@ -466,6 +468,7 @@
                 padding: 10px;
                 background: #DAE9F7; 
                 width: 100px;
+                height: 84px;
                 display: flex;
               }
         
@@ -478,7 +481,7 @@
                 background: #DAE9F7;
                 width: 200px; 
                 right: -200px;
-                height: 80.55px;
+                height: 80px;
                 margin-left: 200px;
                 margin-top: 10px;
                 transition: right 0.4s ease-in-out;
@@ -494,9 +497,10 @@
                 right: 200px;
                 padding: 10px;
                 background: #DAE9F7; 
-                height: 80.55px;
+                height: 80px;
                 z-index: 5;
                 width: 75px;
+                height: 90px;
                 display: flex;
               }
        

@@ -199,6 +199,7 @@ main h2 {
 }
 
 .fact1Img {
+    height: 65px;
     width: 35px;
     padding: 6px;
 }
@@ -473,6 +474,7 @@ main h2 {
             padding: 10px;
             background: #DAE9F7; 
             width: 100px;
+            height: 86px;
             display: flex;
           }
     
@@ -485,7 +487,7 @@ main h2 {
             background: #DAE9F7;
             width: 200px; 
             right: -200px;
-            height: 80.55px;
+            height: 80px;
             margin-left: 200px;
             margin-top: 10px;
             transition: right 0.4s ease-in-out;
