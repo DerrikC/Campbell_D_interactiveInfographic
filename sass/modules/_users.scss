@@ -22,13 +22,12 @@
     .user-panel {
         flex: 0 1 200px;
         text-align: center;
-        padding: 8px;
-        z-index: 10;
+        // padding: 8px;
+        z-index: 10;         
 
-        .u-foodImage { max-width: 200px; 
+        .diagramImage { max-width: 200px; 
             -webkit-clip-path: inset(0px round 5px 5px 5px 5px);
             clip-path: inset(0px round 5px 5px 5px 5px);
-        
         }
 
         .u-link { 
@@ -37,7 +36,7 @@
             font-size: 12px;
             text-decoration: none;
             width: 100px;
-            margin: 20px;
+            margin: 35px;
             background-color: #EA3F54;
             padding: 10px;
             border-radius: 25px;
